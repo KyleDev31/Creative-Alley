@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+main {
+    position: relative;
+    background: #00040F;
+
+  }
+  
+  .main-circle {
+    content: "";
+    position: absolute;
+    width: 600px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    filter: blur(20px); /* Adjust the blur amount as needed */
+  }
+  
+  .top-left {
+    left: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(85, 2, 91, 0.5), transparent);
+    
+  }
+  .lower-right {
+    right: 0;
+    top: 0;
+    background: radial-gradient(circle, rgba(255, 0, 144, 0.5), transparent);
+    opacity: 70%; /* Change the color here */
+  }
+  @keyframes textChange {
+    0% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 0;
+    }
+    66% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+    
+  .animate-text-change {
+    animation: textChange 6s linear infinite; 
+    filter: url(#threshold) blur(0.6px);
+    font-family: "Raleway", sans-serif;
+    user-select: none;
+  }
+
+  .bottom-right-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 80px; /* Optional: Adjust the margin to your preference */
+    margin-right: 330px; /* Optional: Adjust the margin to your preference */
+  }
+/* home.css */
+
+/* Default styles */
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .hero-content {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  .max-w-md {
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+
+
+  
+  
+  
+  

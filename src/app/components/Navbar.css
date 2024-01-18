@@ -1,0 +1,9 @@
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 50; 
+    background-color: rgba(249, 160, 213, 0.482);
+    backdrop-filter: blur(30px);
+   /* Replace with your desired background color */
+  }
+  

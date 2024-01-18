@@ -1,0 +1,59 @@
+.background-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 600px; 
+  height: 1000px;
+  background-size: cover;
+  filter: blur(20px);
+}
+
+.card{
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+main {
+  position: relative;
+  background: #00040F;
+}
+
+.main-circle {
+    content: "";
+    position: absolute;
+    width: 600px; 
+    height: 300px; 
+    filter: blur(20px); 
+  }
+
+.up-left {
+    left: 0;
+    top: 0;
+    background: radial-gradient(circle, rgba(91, 5, 95, 0.621), transparent);
+  }
+  .bot-right {
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255, 0, 115, 0.63), transparent);
+  }
+  
+
+.services-container {
+    gap: 1rem; 
+    margin: 0 12rem 12rem;
+    padding-top: 90px;
+}
+
+.behind { /* Set the background color of the div behind */
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
+   /* Set the z-index to a value lower than the on-top div */
+}
+
+.on-top {
+/* Add some padding for visibility */
+  position: absolute;
+  z-index: 2; /* Set the z-index to a higher value than the behind div */
+}

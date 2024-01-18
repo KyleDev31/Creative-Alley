@@ -1,0 +1,50 @@
+main {
+    position: relative;
+    background: #00040F;
+    overflow: hidden;
+ 
+  }
+
+  .main-circle {
+    content: "";
+    position: absolute;
+    width: 600px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    filter: blur(20px); /* Adjust the blur amount as needed */
+  }
+
+.lower-left {
+    left: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(166, 7, 234, 0.549), transparent);
+  }
+  
+  .upper-right {
+    right: 0;
+    top: 0;
+    background: radial-gradient(circle, rgba(255, 0, 144, 0.651), transparent);
+    opacity: 70%; /* Change the color here */
+  }
+
+  .box {
+    width: 1500px; /* Set the width of the box */
+    height: 130px; /* Set the height of the box */
+    background-color: rgba(252, 253, 254, 0.377);  /* Set the margin around the box */
+    padding: 20px; /* Set the padding inside the box */
+  }
+  .behind { /* Set the background color of the div behind */
+    position: absolute;
+    z-index: 1;
+    opacity: 0.2;
+     /* Set the z-index to a value lower than the on-top div */
+  }
+  .on-top {
+    /* Add some padding for visibility */
+      position: absolute;
+      z-index: 2; /* Set the z-index to a higher value than the behind div */
+    }
+
+.blur{
+  filter: blur(5px);
+}
+  
